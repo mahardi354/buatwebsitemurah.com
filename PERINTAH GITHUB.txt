@@ -1,0 +1,11 @@
+git init
+git add .
+git commit -m "Bismillah meluncur"
+git branch -M main
+-------------- special -------------
+git push -u origin main
+
+
+git add .
+git commit -m "nambah"
+git push
