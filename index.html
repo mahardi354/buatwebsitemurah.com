@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nusaweb Studio — Jasa Website Kontraktor, Klinik Gigi & Wedding Organizer Purwokerto, Cilacap, Banjar, Ciamis</title>
+<meta name="description" content="Nusaweb Studio adalah jasa website premium khusus kontraktor, klinik gigi, dan wedding organizer di Purwokerto, Banyumas, Cilacap, Wanareja, Banjar, Ciamis, dan Tasikmalaya. Landing page custom, selesai 3–5 hari, harga transparan.">
+<meta name="keywords" content="jasa website kontraktor Purwokerto, website klinik gigi Cilacap, landing page wedding organizer Banyumas, jasa website Banjar, jasa website Ciamis, jasa website Tasikmalaya, landing page bisnis lokal Jawa Tengah Jawa Barat">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:   #0A0A0A;
+    --dark:    #111111;
+    --dark2:   #1A1A1A;
+    --dark3:   #242424;
+    --white:   #FAFAFA;
+    --offwhite:#F0EDE8;
+    --gold:    #C9A84C;
+    --gold-l:  #E8D5A3;
+    --gold-d:  #9A7A2E;
+    --gray:    #888888;
+    --gray-l:  #CCCCCC;
+    --border:  rgba(255,255,255,0.08);
+    --border-gold: rgba(201,168,76,0.25);
+    --font-d:  'Cormorant Garamond', serif;
+    --font-b:  'Inter', sans-serif;
+    --radius:  4px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-b); background: var(--black); color: var(--white); line-height: 1.6; }
+  img { display: block; max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 68px;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex; flex-direction: column;
+  }
+  .nav-logo-main {
+    font-family: var(--font-d);
+    font-size: 1.3rem; font-weight: 600;
+    letter-spacing: 0.06em; color: var(--white); line-height: 1;
+  }
+  .nav-logo-main span { color: var(--gold); }
+  .nav-logo-sub {
+    font-size: 0.58rem; font-weight: 400;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-top: 3px;
+  }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a {
+    font-size: 0.78rem; font-weight: 400;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gray); transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: transparent !important;
+    border: 1px solid var(--gold) !important;
+    color: var(--gold) !important;
+    padding: 8px 20px !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    transition: background 0.2s, color 0.2s !important;
+    border-radius: 0 !important;
+  }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--black) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 120px 5% 80px;
+    position: relative; overflow: hidden;
+  }
+
+  /* Grid lines background */
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    pointer-events: none;
+  }
+
+  /* Gold glow */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 20%; left: 60%;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-content { position: relative; z-index: 1; max-width: 900px; }
+
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    margin-bottom: 32px;
+  }
+  .eyebrow-line { width: 36px; height: 1px; background: var(--gold); opacity: 0.7; }
+  .eyebrow-text {
+    font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: var(--font-d);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 300; line-height: 1.08;
+    letter-spacing: 0.01em; color: var(--white);
+    margin-bottom: 28px;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero h1 .line-muted { color: var(--gray); }
+
+  .hero-desc {
+    font-size: 1rem; color: var(--gray);
+    max-width: 560px; line-height: 1.8;
+    font-weight: 300; margin-bottom: 48px;
+  }
+
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 72px; }
+
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--black);
+    font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 14px 32px; transition: background 0.2s, transform 0.15s;
+  }
+  .btn-gold:hover { background: var(--gold-l); transform: translateY(-1px); }
+
+  .btn-outline-gold {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--gold); font-size: 0.78rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    border-bottom: 1px solid rgba(201,168,76,0.4);
+    padding-bottom: 2px; transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-outline-gold:hover { border-color: var(--gold); color: var(--gold-l); }
+
+  /* Hero stats */
+  .hero-stats {
+    display: flex; gap: 48px; flex-wrap: wrap;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+  .hero-stat-item { display: flex; flex-direction: column; gap: 4px; }
+  .hero-stat-num {
+    font-family: var(--font-d);
+    font-size: 2.2rem; font-weight: 300;
+    color: var(--gold); line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.7rem; font-weight: 400;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--gray);
+  }
+
+  /* ── PAIN & SOLUTION ── */
+  .pain-section {
+    padding: 96px 5%;
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .pain-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .pain-left {}
+  .pain-title {
+    font-family: var(--font-d);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300; line-height: 1.2;
+    color: var(--white); margin-bottom: 32px;
+  }
+  .pain-title em { font-style: italic; color: var(--gold); }
+
+  .pain-list { display: flex; flex-direction: column; gap: 16px; }
+  .pain-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .pain-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .pain-text { font-size: 0.88rem; color: var(--gray-l); line-height: 1.65; }
+  .pain-text strong { color: var(--white); font-weight: 600; }
+
+  .solution-right {}
+  .solution-label {
+    font-size: 0.68rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .solution-label::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+
+  .solution-title {
+    font-family: var(--font-d);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300; line-height: 1.2;
+    color: var(--white); margin-bottom: 32px;
+  }
+  .solution-title em { font-style: italic; color: var(--gold); }
+
+  .solution-list { display: flex; flex-direction: column; gap: 14px; }
+  .solution-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 0.88rem; color: var(--gray-l); line-height: 1.65;
+  }
+  .solution-check {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid var(--gold-d);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+    font-size: 0.65rem; color: var(--gold);
+  }
+
+  /* ── NICHE ── */
+  .niche-section { padding: 96px 5%; background: var(--black); }
+  .niche-inner { max-width: 1200px; margin: 0 auto; }
+
+  .section-header { margin-bottom: 56px; }
+  .section-header.center { text-align: center; }
+  .section-header.center .section-eyebrow { justify-content: center; }
+  .section-eyebrow {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+  }
+  .section-eyebrow-line { width: 28px; height: 1px; background: var(--gold); }
+  .section-eyebrow-text {
+    font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+  }
+  .section-title {
+    font-family: var(--font-d);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 300; line-height: 1.15;
+    color: var(--white); letter-spacing: 0.01em;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+  .section-sub {
+    font-size: 0.92rem; color: var(--gray);
+    margin-top: 12px; line-height: 1.8; font-weight: 300;
+  }
+  .section-header.center .section-sub { max-width: 520px; margin: 12px auto 0; }
+
+  .niche-grid {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 1px;
+    background: var(--border);
+  }
+  .niche-card {
+    background: var(--dark);
+    padding: 44px 36px;
+    position: relative; overflow: hidden;
+    transition: background 0.25s;
+    cursor: default;
+  }
+  .niche-card:hover { background: var(--dark2); }
+  .niche-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+  .niche-card:hover::after { transform: scaleX(1); }
+
+  .niche-number {
+    font-family: var(--font-d);
+    font-size: 4rem; font-weight: 300;
+    color: rgba(201,168,76,0.12);
+    line-height: 1; margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .niche-icon {
+    width: 48px; height: 48px;
+    border: 1px solid var(--border-gold);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px; font-size: 1.3rem;
+  }
+  .niche-name {
+    font-family: var(--font-d);
+    font-size: 1.5rem; font-weight: 300;
+    color: var(--white); margin-bottom: 12px; letter-spacing: 0.02em;
+  }
+  .niche-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.75; margin-bottom: 20px; }
+  .niche-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .niche-tag {
+    font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gold-d);
+    border: 1px solid var(--border-gold);
+    padding: 3px 10px; border-radius: 2px;
+  }
+
+  /* ── PORTO ── */
+  .porto-section { padding: 96px 5%; background: var(--dark); }
+  .porto-inner { max-width: 1200px; margin: 0 auto; }
+  .porto-grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 180px; gap: 6px; margin-top: 52px;
+  }
+  .porto-item {
+    position: relative; overflow: hidden; cursor: pointer;
+  }
+  .porto-item:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+  .porto-item:nth-child(2) { grid-column: span 4; grid-row: span 1; }
+  .porto-item:nth-child(3) { grid-column: span 3; grid-row: span 1; }
+  .porto-item:nth-child(4) { grid-column: span 3; grid-row: span 1; }
+  .porto-item:nth-child(5) { grid-column: span 4; grid-row: span 1; }
+  .porto-item:nth-child(6) { grid-column: span 5; grid-row: span 2; }
+  .porto-item:nth-child(7) { grid-column: span 7; grid-row: span 1; }
+
+  .porto-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: brightness(0.7) grayscale(0.3);
+    transition: transform 0.5s ease, filter 0.4s ease;
+  }
+  .porto-item:hover img { transform: scale(1.05); filter: brightness(0.9) grayscale(0); }
+
+  .porto-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, transparent 55%);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 18px; opacity: 0; transition: opacity 0.3s;
+  }
+  .porto-item:hover .porto-overlay { opacity: 1; }
+  .porto-overlay-niche {
+    font-size: 0.62rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 4px;
+  }
+  .porto-overlay-name {
+    font-family: var(--font-d);
+    font-size: 1rem; font-weight: 300;
+    color: var(--white); letter-spacing: 0.02em;
+  }
+
+  /* Gold corner on first item */
+  .porto-item:first-child::before {
+    content: ''; position: absolute; top: 12px; left: 12px;
+    width: 24px; height: 24px;
+    border-top: 1px solid var(--gold); border-left: 1px solid var(--gold);
+    opacity: 0.6; z-index: 2;
+  }
+
+  /* ── PROSES ── */
+  .proses-section { padding: 96px 5%; background: var(--black); }
+  .proses-inner { max-width: 1100px; margin: 0 auto; }
+  .proses-grid {
+    display: grid; grid-template-columns: repeat(5,1fr);
+    gap: 0; margin-top: 64px; position: relative;
+  }
+  .proses-grid::before {
+    content: ''; position: absolute;
+    top: 20px; left: 10%; right: 10%; height: 1px;
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(201,168,76,0.4) 0, rgba(201,168,76,0.4) 8px,
+      transparent 8px, transparent 16px
+    );
+  }
+  .proses-step {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: 0 12px;
+  }
+  .proses-node {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--black); border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px; position: relative; z-index: 1; flex-shrink: 0;
+  }
+  .proses-num {
+    font-family: var(--font-d); font-size: 1rem; font-weight: 300;
+    color: var(--gold); line-height: 1;
+  }
+  .proses-title {
+    font-family: var(--font-d); font-size: 1rem; font-weight: 300;
+    color: var(--white); margin-bottom: 8px; font-style: italic;
+  }
+  .proses-desc { font-size: 0.78rem; color: var(--gray); line-height: 1.7; }
+
+  /* ── HARGA ── */
+  .harga-section { padding: 96px 5%; background: var(--dark); }
+  .harga-inner { max-width: 1100px; margin: 0 auto; }
+  .harga-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 1px; background: var(--border); margin-top: 52px;
+  }
+  .harga-card {
+    background: var(--dark2); padding: 44px 36px;
+    position: relative; transition: background 0.2s;
+  }
+  .harga-card:hover { background: var(--dark3); }
+  .harga-card.featured { background: var(--dark3); border: 1px solid var(--border-gold); }
+
+  .harga-badge {
+    position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+    background: var(--gold); color: var(--black);
+    font-size: 0.6rem; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    padding: 4px 16px; white-space: nowrap;
+  }
+
+  .harga-paket {
+    font-size: 0.68rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 8px;
+  }
+  .harga-nama {
+    font-family: var(--font-d); font-size: 1.8rem; font-weight: 300;
+    color: var(--white); margin-bottom: 6px;
+  }
+  .harga-price {
+    font-family: var(--font-d); font-size: 2.4rem; font-weight: 300;
+    color: var(--gold); line-height: 1; margin-bottom: 6px;
+  }
+  .harga-price-sub { font-size: 0.75rem; color: var(--gray); margin-bottom: 28px; }
+  .harga-divider { height: 1px; background: var(--border); margin-bottom: 24px; }
+
+  .harga-list { display: flex; flex-direction: column; gap: 11px; margin-bottom: 32px; }
+  .harga-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 0.83rem; color: var(--gray-l); line-height: 1.6;
+  }
+  .harga-check { color: var(--gold); flex-shrink: 0; margin-top: 2px; font-size: 0.75rem; }
+  .harga-item.dimmed { opacity: 0.35; }
+  .harga-item.dimmed .harga-check { color: var(--gray); }
+
+  .btn-harga {
+    display: block; text-align: center;
+    border: 1px solid var(--border-gold);
+    color: var(--gold);
+    font-size: 0.72rem; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 13px 24px; transition: background 0.2s, color 0.2s;
+  }
+  .btn-harga:hover { background: var(--gold); color: var(--black); }
+  .harga-card.featured .btn-harga { background: var(--gold); color: var(--black); }
+  .harga-card.featured .btn-harga:hover { background: var(--gold-l); }
+
+  /* ── TESTIMONI ── */
+  .testi-section { padding: 96px 5%; background: var(--black); }
+  .testi-inner { max-width: 1200px; margin: 0 auto; }
+  .testi-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 1px; background: var(--border); margin-top: 52px;
+  }
+  .testi-card {
+    background: var(--dark); padding: 36px 32px;
+    border-bottom: 1px solid var(--border-gold);
+    transition: background 0.2s;
+  }
+  .testi-card:hover { background: var(--dark2); }
+  .testi-quote {
+    font-family: var(--font-d); font-size: 3rem; font-weight: 300;
+    color: var(--gold); opacity: 0.3; line-height: 0.6; margin-bottom: 20px;
+  }
+  .testi-text {
+    font-family: var(--font-d); font-size: 1rem; font-weight: 300;
+    font-style: italic; color: var(--gray-l);
+    line-height: 1.8; margin-bottom: 24px;
+  }
+  .testi-divider { height: 1px; background: var(--border); margin-bottom: 20px; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--dark3); border: 1px solid var(--border-gold);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-d); font-size: 0.95rem;
+    color: var(--gold); flex-shrink: 0;
+  }
+  .testi-name { font-weight: 600; font-size: 0.85rem; color: var(--white); }
+  .testi-role { font-size: 0.72rem; color: var(--gray); margin-top: 2px; }
+  .testi-niche {
+    margin-left: auto;
+    font-size: 0.62rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gold-d);
+    border: 1px solid var(--border-gold);
+    padding: 2px 8px; border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── FAQ ── */
+  .faq-section { padding: 96px 5%; background: var(--dark); }
+  .faq-inner { max-width: 760px; margin: 0 auto; }
+  .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 1px; background: var(--border); }
+  .faq-item { background: var(--dark2); }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 24px; font-weight: 500; font-size: 0.92rem;
+    color: var(--white); cursor: pointer; transition: background 0.2s; gap: 12px;
+  }
+  .faq-q:hover { background: var(--dark3); }
+  .faq-q svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; transition: transform 0.3s; }
+  .faq-item.open .faq-q { color: var(--gold); }
+  .faq-item.open .faq-q svg { transform: rotate(45deg); }
+  .faq-a {
+    font-size: 0.86rem; color: var(--gray);
+    line-height: 1.8; padding: 0 24px;
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.2s;
+  }
+  .faq-item.open .faq-a { max-height: 300px; padding: 0 24px 20px; }
+
+  /* ── CTA ── */
+  .cta-section {
+    padding: 120px 5%; text-align: center;
+    background: var(--dark2);
+    position: relative; overflow: hidden;
+    border-top: 1px solid var(--border);
+  }
+  .cta-section::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .cta-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+  .cta-ornament {
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    margin-bottom: 36px;
+  }
+  .cta-ornament-line { width: 48px; height: 1px; background: var(--gold); opacity: 0.4; }
+  .cta-ornament-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); opacity: 0.7; }
+  .cta-title {
+    font-family: var(--font-d);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 300; line-height: 1.1;
+    color: var(--white); margin-bottom: 20px; letter-spacing: 0.01em;
+  }
+  .cta-title em { font-style: italic; color: var(--gold); }
+  .cta-sub {
+    font-size: 0.95rem; color: var(--gray);
+    line-height: 1.8; margin-bottom: 48px; font-weight: 300;
+  }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-wa {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: white;
+    font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 15px 32px; transition: background 0.2s;
+  }
+  .btn-wa:hover { background: #20C35E; }
+  .btn-wa svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+  .cta-note { margin-top: 24px; font-size: 0.72rem; color: var(--gray); letter-spacing: 0.08em; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--black); padding: 44px 5%; border-top: 1px solid var(--border); }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-logo {
+    font-family: var(--font-d); font-size: 1.2rem; font-weight: 300;
+    letter-spacing: 0.08em; color: var(--white);
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-domain { font-size: 0.7rem; color: var(--gray); margin-top: 4px; letter-spacing: 0.1em; }
+  .footer-info { font-size: 0.72rem; color: var(--gray); line-height: 1.9; text-align: center; }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { font-size: 0.72rem; letter-spacing: 0.08em; color: var(--gray); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+
+  /* ── FLOATING WA ── */
+  .wa-float {
+    position: fixed; bottom: 28px; right: 28px; z-index: 200;
+    width: 52px; height: 52px; border-radius: 50%;
+    background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: transform 0.2s;
+  }
+  .wa-float:hover { transform: scale(1.1); }
+  .wa-float svg { width: 26px; height: 26px; fill: white; }
+  .wa-float::before {
+    content: ''; position: absolute; inset: -4px; border-radius: 50%;
+    border: 2px solid rgba(37,211,102,0.4);
+    animation: waPulse 2.5s ease-out infinite;
+  }
+  @keyframes waPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .pain-inner { grid-template-columns: 1fr; gap: 48px; }
+    .niche-grid { grid-template-columns: 1fr; gap: 1px; }
+    .porto-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 140px; }
+    .porto-item { grid-column: span 1 !important; grid-row: span 1 !important; }
+    .proses-grid { grid-template-columns: 1fr; gap: 32px; }
+    .proses-grid::before { display: none; }
+    .harga-grid { grid-template-columns: 1fr; gap: 1px; }
+    .testi-grid { grid-template-columns: 1fr; gap: 1px; }
+    .footer-inner { flex-direction: column; text-align: center; }
+    .footer-links { justify-content: center; }
+    .hero-stats { gap: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-main">Nusaweb <span>Studio</span></div>
+    <div class="nav-logo-sub">Landing Page Specialist</div>
+  </div>
+  <div class="nav-links">
+    <a href="#niche">Layanan</a>
+    <a href="#portofolio">Portofolio</a>
+    <a href="#harga">Harga</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://wa.me/6281234567890?text=Halo+Nusaweb+Studio,+saya+ingin+konsultasi" class="nav-cta">Konsultasi Gratis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Landing Page Specialist — Bisnis Lokal Indonesia</span>
+    </div>
+    <h1>Website yang<br>Bekerja untuk<br><em>Bisnis Anda</em></h1>
+    <p class="hero-desc">Kami membuat landing page profesional khusus untuk bisnis lokal — kontraktor, klinik gigi, dan wedding organizer. Berbasis di Wanareja, Cilacap — wilayah perbatasan Jawa Tengah dan Jawa Barat — kami siap menjangkau Purwokerto hingga Banjar dan Ciamis. Bukan sekadar tampil di internet, tapi mengkonversi pengunjung menjadi klien yang WA Anda.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6281234567890?text=Halo+Nusaweb+Studio,+saya+ingin+konsultasi+website" class="btn-gold">Konsultasi Gratis</a>
+      <a href="#portofolio" class="btn-outline-gold">Lihat portofolio ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat-item">
+        <div class="hero-stat-num">50+</div>
+        <div class="hero-stat-label">Klien Puas</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num">3–5</div>
+        <div class="hero-stat-label">Hari Selesai</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num">14</div>
+        <div class="hero-stat-label">Tahun Pengalaman</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num">100%</div>
+        <div class="hero-stat-label">Harga Transparan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN & SOLUTION -->
+<section class="pain-section">
+  <div class="pain-inner">
+    <div class="pain-left">
+      <h2 class="pain-title">Masalah yang<br>Sering <em>Terjadi</em></h2>
+      <div class="pain-list">
+        <div class="pain-item">
+          <div class="pain-icon">😔</div>
+          <div class="pain-text"><strong>Klien baru susah datang</strong> — bisnis bagus tapi hanya dapat dari referensi mulut ke mulut. Tidak ada yang cari lewat Google.</div>
+        </div>
+        <div class="pain-item">
+          <div class="pain-icon">📱</div>
+          <div class="pain-text"><strong>Hanya andalkan Instagram</strong> — calon klien tertarik tapi harus scroll jauh untuk cari info layanan, harga, dan kontak.</div>
+        </div>
+        <div class="pain-item">
+          <div class="pain-icon">🤷</div>
+          <div class="pain-text"><strong>Calon klien kabur sebelum WA</strong> — mereka cari nama bisnis Anda di Google, tidak ketemu apa-apa, lanjut ke kompetitor.</div>
+        </div>
+      </div>
+    </div>
+    <div class="solution-right">
+      <div class="solution-label">Solusi Nusaweb Studio</div>
+      <h2 class="solution-title">Landing Page yang<br><em>Bekerja 24 Jam</em></h2>
+      <div class="solution-list">
+        <div class="solution-item">
+          <div class="solution-check">✓</div>
+          Calon klien googling nama bisnis Anda — ketemu website rapi yang meyakinkan
+        </div>
+        <div class="solution-item">
+          <div class="solution-check">✓</div>
+          Semua info tersaji rapi dalam satu halaman — layanan, harga, portofolio, kontak
+        </div>
+        <div class="solution-item">
+          <div class="solution-check">✓</div>
+          Tombol WA langsung di halaman — pengunjung yang tertarik langsung bisa hubungi
+        </div>
+        <div class="solution-item">
+          <div class="solution-check">✓</div>
+          Loading cepat, tampil sempurna di HP — karena 90% orang browsing dari HP
+        </div>
+        <div class="solution-item">
+          <div class="solution-check">✓</div>
+          Desain custom sesuai karakter bisnis — bukan template yang sama untuk semua orang
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NICHE -->
+<section id="niche" class="niche-section">
+  <div class="niche-inner">
+    <div class="section-header">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Spesialisasi kami</span>
+      </div>
+      <h2 class="section-title">Kami Fokus pada<br><em>Tiga Niche</em> Ini</h2>
+      <p class="section-sub">Sebagai jasa website kontraktor, klinik gigi, dan wedding organizer di Purwokerto, Banyumas, Cilacap, hingga wilayah perbatasan Jawa Barat seperti Banjar, Ciamis, dan Tasikmalaya, kami memahami betul apa yang dibutuhkan calon klien dari masing-masing bisnis — dan bagaimana website harus "berbicara" kepada mereka.</p>
+    </div>
+    <div class="niche-grid">
+      <div class="niche-card">
+        <div class="niche-number">01</div>
+        <div class="niche-icon">🏗️</div>
+        <div class="niche-name">Kontraktor</div>
+        <p class="niche-desc">Sebagai jasa website kontraktor di Purwokerto dan Cilacap, kami buat landing page portofolio yang menampilkan proyek terbaik Anda — rumah, ruko, renovasi, gudang. Calon klien bisa lihat kualitas kerja dan langsung WA untuk konsultasi.</p>
+        <div class="niche-tags">
+          <span class="niche-tag">Portofolio Proyek</span>
+          <span class="niche-tag">Area Layanan</span>
+          <span class="niche-tag">WA Langsung</span>
+        </div>
+      </div>
+      <div class="niche-card">
+        <div class="niche-number">02</div>
+        <div class="niche-icon">🦷</div>
+        <div class="niche-name">Klinik Gigi</div>
+        <p class="niche-desc">Sebagai jasa website klinik gigi di Cilacap dan Banyumas, kami buat website yang membangun kepercayaan calon pasien — profil dokter, layanan lengkap dengan harga, jadwal praktik, dan sistem booking via WA yang mudah.</p>
+        <div class="niche-tags">
+          <span class="niche-tag">Profil Dokter</span>
+          <span class="niche-tag">Jadwal Praktik</span>
+          <span class="niche-tag">Booking WA</span>
+        </div>
+      </div>
+      <div class="niche-card">
+        <div class="niche-number">03</div>
+        <div class="niche-icon">💍</div>
+        <div class="niche-name">Wedding Organizer</div>
+        <p class="niche-desc">Sebagai jasa website wedding organizer, kami buat landing page elegan yang menampilkan portofolio pernikahan terbaik, paket layanan, dan alur kerja — sehingga calon pengantin langsung yakin dan ingin konsultasi.</p>
+        <div class="niche-tags">
+          <span class="niche-tag">Portofolio Wedding</span>
+          <span class="niche-tag">Paket Layanan</span>
+          <span class="niche-tag">Konsultasi WA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTOFOLIO -->
+<section id="portofolio" class="porto-section">
+  <div class="porto-inner">
+    <div class="section-header">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Hasil kerja nyata</span>
+      </div>
+      <h2 class="section-title">Website yang Sudah<br><em>Kami Bangun</em></h2>
+      <p class="section-sub">Setiap website dibuat custom — bukan template. Hasilnya mencerminkan karakter unik masing-masing bisnis.</p>
+    </div>
+    <div class="porto-grid">
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Website kontraktor">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Kontraktor</div>
+          <div class="porto-overlay-name">KBN Kontraktor — Purwokerto</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" alt="Website klinik gigi">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Klinik Gigi</div>
+          <div class="porto-overlay-name">Klinik Senyum Sehat — Cilacap</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Website wedding organizer">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Wedding Organizer</div>
+          <div class="porto-overlay-name">Mahakarya Wedding — Banyumas</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Website kontraktor rumah">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Kontraktor</div>
+          <div class="porto-overlay-name">Jaya Bangun — Semarang</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&q=80" alt="Website WO pernikahan">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Wedding Organizer</div>
+          <div class="porto-overlay-name">Sekar Arum WO — Jogja</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Website dokter gigi">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Klinik Gigi</div>
+          <div class="porto-overlay-name">Drg. Hendra Dental — Solo</div>
+        </div>
+      </div>
+      <div class="porto-item">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80" alt="Website gedung komersial">
+        <div class="porto-overlay">
+          <div class="porto-overlay-niche">Kontraktor</div>
+          <div class="porto-overlay-name">Prima Konstruksi — Purbalingga</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSES -->
+<section class="proses-section">
+  <div class="proses-inner">
+    <div class="section-header center">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Cara kerja kami</span>
+        <div class="section-eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Selesai dalam<br><em>3–5 Hari Kerja</em></h2>
+      <p class="section-sub">Prosesnya sederhana dan transparan. Anda cukup siapkan materi, kami yang kerjakan.</p>
+    </div>
+    <div class="proses-grid">
+      <div class="proses-step">
+        <div class="proses-node"><span class="proses-num">I</span></div>
+        <div class="proses-title">Konsultasi</div>
+        <p class="proses-desc">Diskusi kebutuhan via WA — layanan, target klien, dan referensi tampilan yang disukai.</p>
+      </div>
+      <div class="proses-step">
+        <div class="proses-node"><span class="proses-num">II</span></div>
+        <div class="proses-title">Materi</div>
+        <p class="proses-desc">Anda kirimkan foto, info layanan, dan nomor WA. DP 50% untuk mulai pengerjaan.</p>
+      </div>
+      <div class="proses-step">
+        <div class="proses-node"><span class="proses-num">III</span></div>
+        <div class="proses-title">Pengerjaan</div>
+        <p class="proses-desc">Website dikerjakan dalam 3–5 hari kerja. Desain custom sesuai karakter bisnis Anda.</p>
+      </div>
+      <div class="proses-step">
+        <div class="proses-node"><span class="proses-num">IV</span></div>
+        <div class="proses-title">Revisi</div>
+        <p class="proses-desc">Preview dikirim untuk dicek. Revisi hingga Anda puas sebelum website diluncurkan.</p>
+      </div>
+      <div class="proses-step">
+        <div class="proses-node"><span class="proses-num">V</span></div>
+        <div class="proses-title">Live!</div>
+        <p class="proses-desc">Website aktif dengan domain Anda. Pelunasan setelah website live dan disetujui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HARGA -->
+<section id="harga" class="harga-section">
+  <div class="harga-inner">
+    <div class="section-header center">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Investasi Anda</span>
+        <div class="section-eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Harga <em>Transparan,</em><br>Tanpa Biaya Tersembunyi</h2>
+      <p class="section-sub">Semua harga sudah termasuk desain, pengerjaan, dan revisi. Tidak ada biaya tambahan mendadak.</p>
+    </div>
+    <div class="harga-grid">
+      <div class="harga-card">
+        <div class="harga-paket">Starter</div>
+        <div class="harga-nama">Basic</div>
+        <div class="harga-price">1,5 Juta</div>
+        <div class="harga-price-sub">Pembayaran sekali, bukan bulanan</div>
+        <div class="harga-divider"></div>
+        <div class="harga-list">
+          <div class="harga-item"><span class="harga-check">✓</span> Landing page 1 halaman custom</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Tombol WA langsung</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Hosting gratis selamanya</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Subdomain gratis</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Revisi 2x</div>
+          <div class="harga-item dimmed"><span class="harga-check">✗</span> Domain .com / .id</div>
+          <div class="harga-item dimmed"><span class="harga-check">✗</span> Google Maps embed</div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+Paket+Basic+Nusaweb+Studio" class="btn-harga">Pilih Paket Ini</a>
+      </div>
+      <div class="harga-card featured">
+        <div class="harga-badge">Paling Direkomendasikan</div>
+        <div class="harga-paket">Profesional</div>
+        <div class="harga-nama">Standard</div>
+        <div class="harga-price">2,5 Juta</div>
+        <div class="harga-price-sub">Termasuk domain .com setahun</div>
+        <div class="harga-divider"></div>
+        <div class="harga-list">
+          <div class="harga-item"><span class="harga-check">✓</span> Landing page 1 halaman custom</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Tombol WA langsung</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Hosting gratis selamanya</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Domain .com setahun</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Google Maps embed</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Revisi 3x</div>
+          <div class="harga-item"><span class="harga-check">✓</span> SEO dasar (title, meta, deskripsi)</div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+Paket+Standard+Nusaweb+Studio" class="btn-harga">Pilih Paket Ini</a>
+      </div>
+      <div class="harga-card">
+        <div class="harga-paket">Premium</div>
+        <div class="harga-nama">Pro</div>
+        <div class="harga-price">3,5 Juta</div>
+        <div class="harga-price-sub">Termasuk domain + maintenance 3 bulan</div>
+        <div class="harga-divider"></div>
+        <div class="harga-list">
+          <div class="harga-item"><span class="harga-check">✓</span> Semua yang ada di paket Standard</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Maintenance 3 bulan</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Update konten & foto (3x)</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Revisi tidak terbatas</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Prioritas pengerjaan (1–2 hari)</div>
+          <div class="harga-item"><span class="harga-check">✓</span> Konsultasi digital marketing</div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+Paket+Pro+Nusaweb+Studio" class="btn-harga">Pilih Paket Ini</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <div class="section-header center">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Kata klien kami</span>
+        <div class="section-eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Mereka Sudah<br><em>Merasakannya</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Website-nya selesai dalam 4 hari dan hasilnya melebihi ekspektasi. Sekarang kalau ada yang cari "kontraktor Purwokerto" di Google, nama saya sudah muncul. Sudah dapat 2 klien baru dari sana.</p>
+        <div class="testi-divider"></div>
+        <div class="testi-author">
+          <div class="testi-avatar">HS</div>
+          <div>
+            <div class="testi-name">Hendra Susanto</div>
+            <div class="testi-role">KBN Kontraktor · Purwokerto</div>
+          </div>
+          <span class="testi-niche">Kontraktor</span>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Pasien baru sekarang bilang "saya lihat dari website dokter". Dulu tidak pernah ada yang bilang begitu. Prosesnya mudah, saya tinggal kirim foto dan info klinik, sisanya dikerjakan semua.</p>
+        <div class="testi-divider"></div>
+        <div class="testi-author">
+          <div class="testi-avatar">AS</div>
+          <div>
+            <div class="testi-name">Drg. Amelia Sari</div>
+            <div class="testi-role">Klinik Senyum Sehat · Cilacap</div>
+          </div>
+          <span class="testi-niche">Klinik Gigi</span>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Sebagai WO yang andalkan Instagram, saya ragu awalnya. Tapi sekarang banyak calon pengantin yang bilang mereka cek website dulu sebelum WA. Kesan pertamanya langsung profesional.</p>
+        <div class="testi-divider"></div>
+        <div class="testi-author">
+          <div class="testi-avatar">RW</div>
+          <div>
+            <div class="testi-name">Rini Wahyuni</div>
+            <div class="testi-role">Mahakarya Wedding · Banyumas</div>
+          </div>
+          <span class="testi-niche">WO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="faq-inner">
+    <div class="section-header center">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Pertanyaan umum</span>
+        <div class="section-eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Yang Sering<br><em>Ditanyakan</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Apakah harus paham teknologi untuk punya website?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Sama sekali tidak perlu. Anda cukup kirimkan foto, info bisnis, dan nomor WA — kami yang kerjakan semuanya. Setelah selesai, website langsung aktif dan bisa diakses tanpa perlu setting apapun.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Berapa lama website selesai dikerjakan?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">3–5 hari kerja setelah semua materi dari Anda masuk dan DP diterima. Untuk paket Pro, bisa lebih cepat 1–2 hari karena masuk antrian prioritas.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Ada biaya bulanan atau tahunan setelah website jadi?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Hosting gratis selamanya — tidak ada biaya bulanan atau tahunan untuk hosting. Yang perlu diperpanjang hanya domain (.com atau .id) setahun sekali, harganya sekitar Rp 150.000–200.000 per tahun. Tidak ada biaya tersembunyi lainnya.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Kalau mau update foto atau info di website, bagaimana caranya?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Tinggal WhatsApp kami, sebutkan apa yang mau diubah, dan kami update dalam 1 hari kerja. Biaya update kecil (ganti nomor WA, tambah info) Rp 50.000. Update besar (redesign, tambah section) mulai Rp 200.000.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Apakah website ini bisa langsung muncul di Google?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Website kami sudah dioptimasi dengan SEO dasar (title, meta description, struktur heading) sehingga bisa diindeks Google. Untuk muncul di halaman pertama Google perlu waktu 1–3 bulan tergantung persaingan keyword di kota Anda. Yang penting, begitu ada yang googling nama bisnis Anda — website ini langsung muncul.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Sistem pembayarannya bagaimana?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">DP 50% sebelum pengerjaan dimulai, pelunasan 50% setelah website jadi dan Anda setujui hasilnya. Pembayaran via transfer bank atau QRIS.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament">
+      <div class="cta-ornament-line"></div>
+      <div class="cta-ornament-diamond"></div>
+      <div class="cta-ornament-line"></div>
+    </div>
+    <h2 class="cta-title">Siap Punya Website<br>yang <em>Benar-Benar Bekerja?</em></h2>
+    <p class="cta-sub">Konsultasi pertama gratis dan tanpa komitmen. Ceritakan bisnis Anda — kami bantu wujudkan websitenya dalam 3–5 hari.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6281234567890?text=Halo+Nusaweb+Studio,+saya+ingin+konsultasi+website+untuk+bisnis+saya" class="btn-wa">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.132 6.748 3.056 9.372L1.056 30.86l5.624-1.972C9.12 30.584 12.44 32 16.004 32 24.828 32 32 24.824 32 16S24.828 0 16.004 0zm9.408 22.588c-.392 1.108-1.944 2.024-3.188 2.292-.848.18-1.956.324-5.688-1.22-4.776-1.98-7.856-6.832-8.092-7.148-.228-.316-1.916-2.548-1.916-4.86 0-2.312 1.212-3.44 1.64-3.876.392-.4.856-.5 1.14-.5.284 0 .568.004.816.016.26.012.608-.1.952.724.36.844 1.224 2.992 1.332 3.208.108.216.18.468.036.748-.136.288-.204.464-.408.716-.2.244-.42.544-.6.732-.2.208-.408.432-.176.848.232.408 1.032 1.7 2.216 2.752 1.524 1.356 2.808 1.776 3.216 1.976.408.2.648.168.888-.1.244-.276 1.044-1.216 1.32-1.632.276-.416.552-.348.932-.208.384.14 2.428 1.148 2.844 1.36.416.208.692.312.796.484.1.176.1 1.016-.296 2.088z"/></svg>
+        Konsultasi Gratis via WhatsApp
+      </a>
+    </div>
+    <p class="cta-note">Respons dalam 1 jam kerja · Senin–Sabtu 08.00–21.00</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Nusaweb <span>Studio</span></div>
+      <div class="footer-domain">buatwebsitemurah.com</div>
+    </div>
+    <div class="footer-info">
+      Jasa website kontraktor, klinik gigi & wedding organizer<br>
+      Purwokerto · Banyumas · Cilacap · Banjar · Ciamis · Tasikmalaya<br>
+      📱 0812-3456-7890 · nusawebstudio@gmail.com
+    </div>
+    <div class="footer-links">
+      <a href="#niche">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6281234567890?text=Halo+Nusaweb+Studio" class="wa-float" title="Chat WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.132 6.748 3.056 9.372L1.056 30.86l5.624-1.972C9.12 30.584 12.44 32 16.004 32 24.828 32 32 24.824 32 16S24.828 0 16.004 0zm9.408 22.588c-.392 1.108-1.944 2.024-3.188 2.292-.848.18-1.956.324-5.688-1.22-4.776-1.98-7.856-6.832-8.092-7.148-.228-.316-1.916-2.548-1.916-4.86 0-2.312 1.212-3.44 1.64-3.876.392-.4.856-.5 1.14-.5.284 0 .568.004.816.016.26.012.608-.1.952.724.36.844 1.224 2.992 1.332 3.208.108.216.18.468.036.748-.136.288-.204.464-.408.716-.2.244-.42.544-.6.732-.2.208-.408.432-.176.848.232.408 1.032 1.7 2.216 2.752 1.524 1.356 2.808 1.776 3.216 1.976.408.2.648.168.888-.1.244-.276 1.044-1.216 1.32-1.632.276-.416.552-.348.932-.208.384.14 2.428 1.148 2.844 1.36.416.208.692.312.796.484.1.176.1 1.016-.296 2.088z"/></svg>
+</a>
+
+<script>
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
