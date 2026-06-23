@@ -208,6 +208,12 @@ footer ul li a:hover{color:#fff}
 }
 .price-extra{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .price-extra-item{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#166534;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:99px;padding:6px 14px;font-weight:600}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
+.stat-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:26px 24px;box-shadow:0 2px 12px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
+.stat-icon{font-size:2rem;line-height:1}
+.stat-title{font-size:.97rem;font-weight:700;color:var(--dark);margin:0}
+.stat-desc{font-size:.86rem;line-height:1.7;color:#555;margin:0}
+@media(max-width:640px){.stat-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -237,8 +243,8 @@ footer ul li a:hover{color:#fff}
     <div class="hero-grid">
       <div>
         <p class="hero-label">💻 Melayani Usaha di Mojosari, Mojokerto</p>
-        <h1 class="hero-title">Jasa Pembuatan Website <span class="hl">Mojosari</span> – Skor Google 100/100</h1>
-        <p class="hero-sub">Sudah 12+ tahun melayani klien dari berbagai daerah, termasuk Mojosari. Proses 100% online, harga jujur, tidak ada biaya tersembunyi.</p>
+        <h1 class="hero-title">Bikin Website Usaha di <span class="hl">Mojosari</span> – Cepat & Terbukti</h1>
+        <p class="hero-sub">Punya usaha di Mojosari tapi belum ketemu calon pelanggan online? Kami buatkan website yang BENAR-benar punya fondasi teknis kuat. Mulai Rp 2.500.000.</p>
         <div class="hero-cta-group">
           <a href="https://wa.me/6285137396984?text=Halo%2C%20saya%20mau%20tanya%20soal%20bikin%20website%20usaha%20saya%20di%20Mojosari" target="_blank" rel="noopener" class="btn btn-wa btn-lg" aria-label="Konsultasi WebVolt untuk bikin website usaha di Mojosari"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.116 1.52 5.849L.057 23.881a.5.5 0 00.611.611l6.032-1.463A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.948 0-3.773-.527-5.335-1.444l-.381-.228-3.949.958.977-3.83-.25-.397A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Konsultasi Gratis</a>
           <a href="#portfolio" class="btn btn-outline">Lihat Bukti ↓</a>
@@ -349,9 +355,9 @@ footer ul li a:hover{color:#fff}
     <div class="unique-intro-wrap">
       <div class="unique-intro-icon">💻</div>
       <div>
-        <h2 class="unique-intro-title">Mengapa Usaha di Mojosari Butuh Website Sekarang?</h2>
-        <p class="unique-intro-text">Di Mojosari, Mojokerto, persaingan antar pelaku usaha jasa lokal semakin ketat. Calon pelanggan yang mencari layanan tertentu di Google akan langsung memilih yang muncul di hasil pencarian — kalau usaha Anda tidak ada di sana, calon pelanggan itu otomatis pindah ke kompetitor. WebVolt membantu usaha di Mojosari hadir di pencarian Google dengan website yang dibangun sesuai standar teknis.</p>
-        <p class="unique-intro-text">Tidak semua jasa pembuatan website memperhatikan kecepatan loading dan struktur yang ramah mesin pencari. WebVolt fokus pada dua hal itu sejak awal — karena website yang lambat atau berantakan strukturnya akan sulit ditemukan, meski tampilannya terlihat bagus di mata manusia. Inilah yang membedakan kami dari jasa web biasa untuk pelaku usaha di Mojosari.</p>
+        <h2 class="unique-intro-title">Website Profesional untuk Usaha Anda di Mojosari</h2>
+        <p class="unique-intro-text">Banyak pelaku usaha di Mojosari masih mengandalkan media sosial saja untuk promosi. Media sosial memang penting, tapi punya keterbatasan — algoritmanya berubah-ubah, dan calon pelanggan yang benar-benar niat mencari jasa biasanya tetap mengetik di Google, bukan scroll Instagram. WebVolt membantu usaha Anda hadir di kedua tempat itu sekaligus.</p>
+        <p class="unique-intro-text">Dengan pengalaman membangun lebih dari 11 website untuk berbagai jenis usaha jasa lokal, WebVolt memahami pola kebutuhan spesifik tiap jenis usaha — mulai dari struktur halaman, daftar harga, hingga tombol kontak yang memudahkan pelanggan menghubungi Anda langsung.</p>
       </div>
     </div>
     <div class="lokasi-box">
@@ -380,7 +386,7 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge">✅ Yang Kami Kerjakan</div>
-      <h2>Semua Layanan Kami untuk Pelaku Usaha Mojosari</h2>
+      <h2>Apa yang Kami Kerjakan untuk Klien Mojosari?</h2>
       <p>Ini yang konkret Anda dapatkan — bukan janji abstrak, tapi deliverable nyata untuk usaha di Mojosari.</p>
     </div>
     <div class="services-grid">

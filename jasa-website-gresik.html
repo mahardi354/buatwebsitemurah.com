@@ -203,14 +203,13 @@ footer ul li a:hover{color:#fff}
 }
 .price-extra{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .price-extra-item{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#166534;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:99px;padding:6px 14px;font-weight:600}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
+.stat-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:26px 24px;box-shadow:0 2px 12px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
+.stat-icon{font-size:2rem;line-height:1}
+.stat-title{font-size:.97rem;font-weight:700;color:var(--dark);margin:0}
+.stat-desc{font-size:.86rem;line-height:1.7;color:#555;margin:0}
+@media(max-width:640px){.stat-grid{grid-template-columns:1fr}}
 
-.fact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px}
-.fact-card{background:var(--white);border-radius:var(--radius);padding:26px 24px;border-top:4px solid var(--primary);box-shadow:var(--shadow);transition:.2s}
-.fact-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.fact-icon{font-size:2.2rem;line-height:1;margin-bottom:12px}
-.fact-card h3{font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--dark)}
-.fact-card p{font-size:.86rem;color:var(--gray);line-height:1.75}
-@media(max-width:768px){.fact-grid{grid-template-columns:1fr}}
 .kec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:13px;margin-top:28px}
 .kec-card{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);transition:.2s;text-decoration:none;color:var(--dark)}
 .kec-card:hover{border-color:var(--primary);background:var(--primary-lt);transform:translateY(-2px)}
@@ -390,26 +389,26 @@ footer ul li a:hover{color:#fff}
       <h2>Kenapa Usaha Jasa Lokal di Gresik Butuh Website Sekarang?</h2>
       <p>Bukan soal tren — ini soal siapa yang ditemukan pelanggan saat mereka mencari di Google.</p>
     </div>
-    <div class="fact-grid">
-      <div class="fact-card">
-        <div class="fact-icon">📱</div>
-        <h3>97% Pencarian Jasa Lokal Dimulai dari Google</h3>
-        <p>Bukan dari mulut ke mulut atau spanduk pinggir jalan. Kalau usaha Anda di Gresik tidak muncul di sana, pelanggan langsung beralih ke kompetitor.</p>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">📱</div>
+        <h3 class="stat-title">97% Pencarian Mulai dari Google</h3>
+        <p class="stat-desc">Bukan dari mulut ke mulut atau spanduk pinggir jalan. Kalau usaha Anda di Gresik tidak muncul di sana, pelanggan langsung beralih ke kompetitor yang sudah hadir online.</p>
       </div>
-      <div class="fact-card">
-        <div class="fact-icon">⏱️</div>
-        <h3>Rata-Rata Website Usaha Indonesia Loading 4–8 Detik di HP</h3>
-        <p>Google sendiri menyatakan 53% pengunjung meninggalkan halaman yang lebih dari 3 detik. Website yang kami buat: di bawah 2 detik.</p>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">⏱️</div>
+        <h3 class="stat-title">Loading Lambat = Kehilangan Pelanggan</h3>
+        <p class="stat-desc">Rata-rata website usaha Indonesia loading 4–8 detik di HP. Google menyatakan 53% pengunjung kabur dari halaman yang lebih dari 3 detik. Website kami: di bawah 2 detik, bergaransi.</p>
       </div>
-      <div class="fact-card">
-        <div class="fact-icon">🗺️</div>
-        <h3>Halaman per Kecamatan Jauh Lebih Efektif</h3>
-        <p>Dibanding 1 halaman generik. Saat orang di Gresik mengetik "jasa [nama usaha] [nama kecamatan]", halaman spesifik itu yang muncul — bukan halaman umum yang tidak relevan.</p>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">🗺️</div>
+        <h3 class="stat-title">Halaman Per Kecamatan Jauh Lebih Efektif</h3>
+        <p class="stat-desc">Satu halaman generik kalah jauh. Halaman spesifik "jasa [nama usaha] [nama kecamatan]" yang muncul saat orang mencari di Gresik — bukan halaman umum yang tidak relevan.</p>
       </div>
-      <div class="fact-card">
-        <div class="fact-icon">🛡️</div>
-        <h3>Website Statis Tidak Bisa Diretas via Plugin</h3>
-        <p>Tidak ada database, tidak ada panel admin yang bisa disusupi seperti WordPress — artinya website Anda tetap aman tanpa perlu maintenance rutin yang memakan biaya.</p>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">🛡️</div>
+        <h3 class="stat-title">Static HTML = Nol Risiko Diretas</h3>
+        <p class="stat-desc">Tidak ada database, tidak ada plugin, tidak ada panel admin yang bisa disusupi. Website Anda tetap aman tanpa maintenance rutin — berbeda dengan WordPress yang rutin jadi target hacker.</p>
       </div>
     </div>
   </div>
