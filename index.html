@@ -190,6 +190,15 @@ footer ul li a:hover{color:#fff}
 .proof-badges{display:flex;gap:6px;margin-top:6px}
 .proof-badge{background:#DCFCE7;color:#15803D;font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:99px}
 .proof-note{text-align:center;font-size:.85rem;color:var(--gray);margin-top:20px;font-style:italic}
+/* INDEX — niche tabs */
+.niche-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;border-bottom:2px solid var(--border);padding-bottom:0}
+.niche-tab{padding:10px 20px;border:none;background:none;border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer;font-size:.9rem;font-weight:600;color:var(--muted);transition:.2s;border-radius:0;font-family:inherit}
+.niche-tab:hover{color:var(--primary)}
+.niche-tab.active{color:var(--primary);border-bottom-color:var(--primary)}
+.niche-tab .tab-count{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:var(--primary-lt);color:var(--primary);border-radius:99px;font-size:.75rem;margin-left:6px}
+.niche-tab.active .tab-count{background:var(--primary);color:#fff}
+@media(max-width:480px){.niche-tab{padding:8px 12px;font-size:.82rem}}
+
 /* INDEX — niche picker grid */
 .niche-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:36px}
 .niche-card{display:flex;align-items:center;gap:14px;padding:20px;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);transition:.2s;text-decoration:none}
@@ -501,21 +510,21 @@ footer ul li a:hover{color:#fff}
           <img src="https://buatwebsitemurah.com/images/psi-sedotwcpro.webp" alt="Hasil PageSpeed Insights sedotwcpro.id skor 100" class="psi-shot-img" loading="lazy" width="480" height="300">
           <div class="psi-shot-label">
             <span class="psi-shot-domain">🚰 sedotwcpro.id</span>
-            <a href="https://pagespeed.web.dev/analysis?url=https://sedotwcpro.id/sedot-wc-banyumas" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
+            <a href="https://pagespeed.web.dev/analysis?url=https://sedotwcpro.id/sedot-wc-banyumas.html" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
           </div>
         </div>
         <div class="psi-shot-card">
           <img src="https://buatwebsitemurah.com/images/psi-listrik24.webp" alt="Hasil PageSpeed Insights listrik24.com skor 100" class="psi-shot-img" loading="lazy" width="480" height="300">
           <div class="psi-shot-label">
             <span class="psi-shot-domain">⚡ listrik24.com</span>
-            <a href="https://pagespeed.web.dev/analysis?url=https://listrik24.com/tukang-listrik-banyumas" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
+            <a href="https://pagespeed.web.dev/analysis?url=https://listrik24.com/tukang-listrik-banyumas.html" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
           </div>
         </div>
         <div class="psi-shot-card">
           <img src="https://buatwebsitemurah.com/images/psi-kontraktorhandal.webp" alt="Hasil PageSpeed Insights kontraktorhandal.id skor 100" class="psi-shot-img" loading="lazy" width="480" height="300">
           <div class="psi-shot-label">
             <span class="psi-shot-domain">🏗️ kontraktorhandal.id</span>
-            <a href="https://pagespeed.web.dev/analysis?url=https://kontraktorhandal.id/kontraktor-banyumas" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
+            <a href="https://pagespeed.web.dev/analysis?url=https://kontraktorhandal.id/kontraktor-banyumas.html" target="_blank" rel="noopener" class="psi-shot-link">Cek ulang →</a>
           </div>
         </div>
       </div>
@@ -564,65 +573,74 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge">🛠️ Pilih Jenis Usaha Anda</div>
-      <h2>Kami Sudah Punya Pengalaman Spesifik untuk Usaha Anda</h2>
-      <p>Pilih jenis usaha yang paling sesuai untuk lihat contoh, harga, dan detail layanan kami.</p>
+      <h2>45 Jenis Usaha — Kami Sudah Punya Pengalaman Spesifiknya</h2>
+      <p>Pilih kategori dan jenis usaha Anda untuk lihat contoh, harga, dan detail layanan kami.</p>
     </div>
-    <div class="niche-grid">
-      <a href="https://buatwebsitemurah.com/jasa-website-sedot-wc.html" class="niche-card">
-        <div class="niche-icon">🚰</div>
-        <div class="niche-name">Sedot WC & Limbah</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-service-ac.html" class="niche-card">
-        <div class="niche-icon">❄️</div>
-        <div class="niche-name">Service AC</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-tukang-listrik.html" class="niche-card">
-        <div class="niche-icon">⚡</div>
-        <div class="niche-name">Tukang Listrik</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-laundry.html" class="niche-card">
-        <div class="niche-icon">🧺</div>
-        <div class="niche-name">Laundry Kiloan</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-rental-mobil.html" class="niche-card">
-        <div class="niche-icon">🚗</div>
-        <div class="niche-name">Rental Mobil</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-dokter-gigi.html" class="niche-card">
-        <div class="niche-icon">🦷</div>
-        <div class="niche-name">Dokter Gigi & Klinik</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-travel.html" class="niche-card">
-        <div class="niche-icon">🚐</div>
-        <div class="niche-name">Travel Antar Kota</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-tukang-bangunan.html" class="niche-card">
-        <div class="niche-icon">🧱</div>
-        <div class="niche-name">Tukang Bangunan</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-kontraktor.html" class="niche-card">
-        <div class="niche-icon">🏗️</div>
-        <div class="niche-name">Kontraktor</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-catering.html" class="niche-card">
-        <div class="niche-icon">🍽️</div>
-        <div class="niche-name">Catering</div>
-        <div class="niche-arrow">→</div>
-      </a>
-      <a href="https://buatwebsitemurah.com/jasa-website-aqiqah.html" class="niche-card">
-        <div class="niche-icon">🐑</div>
-        <div class="niche-name">Aqiqah</div>
-        <div class="niche-arrow">→</div>
-      </a></div>
+
+    <!-- TAB SWITCHER -->
+    <div class="niche-tabs" role="tablist">
+      <button class="niche-tab active" role="tab" aria-selected="true"  aria-controls="tab-t1" id="btn-t1">🔧 Jasa Rumahan <span class="tab-count">11</span></button>
+      <button class="niche-tab"        role="tab" aria-selected="false" aria-controls="tab-t2" id="btn-t2">🏪 Jasa Lokal <span class="tab-count">16</span></button>
+      <button class="niche-tab"        role="tab" aria-selected="false" aria-controls="tab-t3" id="btn-t3">🏢 Profesi & Formal <span class="tab-count">18</span></button>
+    </div>
+
+    <!-- TAB T1 — Core / Jasa Rumahan -->
+    <div class="niche-grid" id="tab-t1" role="tabpanel" aria-labelledby="btn-t1">
+      <a href="https://buatwebsitemurah.com/jasa-website-sedot-wc.html" class="niche-card"><div class="niche-icon">🚰</div><div class="niche-name">Sedot WC & Limbah</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-service-ac.html" class="niche-card"><div class="niche-icon">❄️</div><div class="niche-name">Service AC</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-tukang-listrik.html" class="niche-card"><div class="niche-icon">⚡</div><div class="niche-name">Tukang Listrik</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-laundry.html" class="niche-card"><div class="niche-icon">🧺</div><div class="niche-name">Laundry Kiloan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-rental-mobil.html" class="niche-card"><div class="niche-icon">🚗</div><div class="niche-name">Rental Mobil</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-dokter-gigi.html" class="niche-card"><div class="niche-icon">🦷</div><div class="niche-name">Dokter Gigi & Klinik</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-travel.html" class="niche-card"><div class="niche-icon">🚐</div><div class="niche-name">Travel Antar Kota</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-tukang-bangunan.html" class="niche-card"><div class="niche-icon">🧱</div><div class="niche-name">Tukang Bangunan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-kontraktor.html" class="niche-card"><div class="niche-icon">🏗️</div><div class="niche-name">Kontraktor</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-catering.html" class="niche-card"><div class="niche-icon">🍽️</div><div class="niche-name">Catering</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-aqiqah.html" class="niche-card"><div class="niche-icon">🐑</div><div class="niche-name">Aqiqah</div><div class="niche-arrow">→</div></a>
+    </div>
+
+    <!-- TAB T2 — Jasa Lokal Sejenis -->
+    <div class="niche-grid" id="tab-t2" role="tabpanel" aria-labelledby="btn-t2" hidden>
+      <a href="https://buatwebsitemurah.com/jasa-website-bengkel.html" class="niche-card"><div class="niche-icon">🔧</div><div class="niche-name">Bengkel Motor & Mobil</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-barbershop.html" class="niche-card"><div class="niche-icon">💈</div><div class="niche-name">Barbershop</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-salon.html" class="niche-card"><div class="niche-icon">💇</div><div class="niche-name">Salon Kecantikan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-toko-bangunan.html" class="niche-card"><div class="niche-icon">🧱</div><div class="niche-name">Toko Bangunan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-apotek.html" class="niche-card"><div class="niche-icon">💊</div><div class="niche-name">Apotek</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-fotografer.html" class="niche-card"><div class="niche-icon">📸</div><div class="niche-name">Fotografer & WO</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-percetakan.html" class="niche-card"><div class="niche-icon">🖨️</div><div class="niche-name">Percetakan & Sablon</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-furniture.html" class="niche-card"><div class="niche-icon">🛋️</div><div class="niche-name">Furniture & Mebel</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-bimbel.html" class="niche-card"><div class="niche-icon">📚</div><div class="niche-name">Bimbel & Les Privat</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-petshop.html" class="niche-card"><div class="niche-icon">🐾</div><div class="niche-name">Pet Shop & Klinik Hewan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-florist.html" class="niche-card"><div class="niche-icon">🌸</div><div class="niche-name">Toko Bunga & Florist</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-konveksi.html" class="niche-card"><div class="niche-icon">🧵</div><div class="niche-name">Penjahit & Konveksi</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-studio-musik.html" class="niche-card"><div class="niche-icon">🎸</div><div class="niche-name">Studio Musik</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-gym.html" class="niche-card"><div class="niche-icon">💪</div><div class="niche-name">Gym & Fitness Center</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-toko-sepeda.html" class="niche-card"><div class="niche-icon">🚲</div><div class="niche-name">Toko Sepeda</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-game-center.html" class="niche-card"><div class="niche-icon">🎮</div><div class="niche-name">Rental PS & Game Center</div><div class="niche-arrow">→</div></a>
+    </div>
+
+    <!-- TAB T3 — Profesi & Jasa Formal -->
+    <div class="niche-grid" id="tab-t3" role="tabpanel" aria-labelledby="btn-t3" hidden>
+      <a href="https://buatwebsitemurah.com/jasa-website-notaris.html" class="niche-card"><div class="niche-icon">⚖️</div><div class="niche-name">Notaris & PPAT</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-pengacara.html" class="niche-card"><div class="niche-icon">🧑‍⚖️</div><div class="niche-name">Pengacara</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-akuntan.html" class="niche-card"><div class="niche-icon">🧾</div><div class="niche-name">Akuntan & Konsultan Pajak</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-klinik-kecantikan.html" class="niche-card"><div class="niche-icon">✨</div><div class="niche-name">Klinik Kecantikan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-sekolah.html" class="niche-card"><div class="niche-icon">🏫</div><div class="niche-name">Sekolah & PAUD</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-pesantren.html" class="niche-card"><div class="niche-icon">🕌</div><div class="niche-name">Pondok Pesantren</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-koperasi.html" class="niche-card"><div class="niche-icon">🏦</div><div class="niche-name">Koperasi & BMT</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-developer.html" class="niche-card"><div class="niche-icon">🏠</div><div class="niche-name">Developer Properti</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-hotel.html" class="niche-card"><div class="niche-icon">🏨</div><div class="niche-name">Hotel & Penginapan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-restoran.html" class="niche-card"><div class="niche-icon">🍜</div><div class="niche-name">Restoran & Cafe</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-toko-online.html" class="niche-card"><div class="niche-icon">🛒</div><div class="niche-name">Toko Online & UMKM</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-eo.html" class="niche-card"><div class="niche-icon">🎪</div><div class="niche-name">Event Organizer</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-pindahan.html" class="niche-card"><div class="niche-icon">🚛</div><div class="niche-name">Jasa Pindahan</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-cleaning.html" class="niche-card"><div class="niche-icon">🧹</div><div class="niche-name">Cleaning Service</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-kosmetik.html" class="niche-card"><div class="niche-icon">💅</div><div class="niche-name">Toko Kosmetik & Skincare</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-sparepart.html" class="niche-card"><div class="niche-icon">⚙️</div><div class="niche-name">Toko Sparepart</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-bengkel-las.html" class="niche-card"><div class="niche-icon">🔩</div><div class="niche-name">Bengkel Las</div><div class="niche-arrow">→</div></a>
+      <a href="https://buatwebsitemurah.com/jasa-website-renovasi.html" class="niche-card"><div class="niche-icon">🏡</div><div class="niche-name">Renovasi & Interior</div><div class="niche-arrow">→</div></a>
+    </div>
+
     <p class="proof-note">Usaha Anda tidak ada di daftar? Tidak masalah — hubungi kami, kami tetap bisa bantu.</p>
   </div>
 </section>
@@ -875,7 +893,18 @@ footer ul li a:hover{color:#fff}
   </div>
 </footer>
 <script>
-document.querySelectorAll('.faq-q').forEach(btn=>{
+// Niche tab switcher
+document.querySelectorAll('.niche-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.niche-tab').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false');});
+    btn.classList.add('active');btn.setAttribute('aria-selected','true');
+    const target=btn.getAttribute('aria-controls');
+    document.querySelectorAll('.niche-grid[role="tabpanel"]').forEach(p=>p.hidden=true);
+    document.getElementById(target).hidden=false;
+  });
+});
+
+
   btn.addEventListener('click',()=>{
     const item=btn.closest('.faq-item');
     const wasOpen=item.classList.contains('open');
