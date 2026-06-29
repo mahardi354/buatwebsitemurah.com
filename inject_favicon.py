@@ -24,10 +24,8 @@ DEFAULT_EMOJI = "⚡"      # ganti ke emoji lain kalau mau
 
 # Folder HTML yang akan diproses (relatif dari lokasi script)
 HTML_DIRS = [
-    "",        # index.html
-    "",        # 16 niche T2
-    "",        # 18 niche T3
-]
+    ".",        # index.html
+ ]
 
 # Kalau file tier1 ada di folder sendiri, tambahkan di sini:
 # HTML_DIRS.append("output-webvolt-tier1")
