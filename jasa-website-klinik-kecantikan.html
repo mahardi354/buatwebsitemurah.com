@@ -321,6 +321,15 @@ footer ul li a:hover{color:#fff}
 .btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:inherit;font-weight:700;font-size:.9rem;border-radius:var(--radius);border:none;background:#FBBF24;color:var(--dark);padding:13px 20px;cursor:pointer;transition:.2s;text-decoration:none}
 .btn-gold:hover{background:#F59E0B;transform:translateY(-2px)}
 @media(max-width:900px){.paket-grid{grid-template-columns:1fr}}
+.paket-highlight{font-weight:600 !important;opacity:1 !important;color:inherit !important}
+.paket-highlight::before{content:"" !important;display:none !important}
+.paket-list .paket-highlight{padding-left:0}
+.bonus-box{margin-top:28px;border:2px dashed var(--primary);border-radius:var(--radius-lg);background:var(--bg-alt);padding:20px 24px;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.bonus-header{font-family:"Bricolage Grotesque",sans-serif;font-size:1rem;font-weight:800;color:var(--primary);white-space:nowrap}
+.bonus-body{flex:1;min-width:200px}
+.bonus-body strong{font-size:.95rem;color:var(--dark)}
+.bonus-value{margin-left:6px;font-size:.82rem;color:var(--primary);font-weight:700;white-space:nowrap}
+.bonus-body p{margin:4px 0 0;font-size:.84rem;color:var(--gray)}
 /* ── TIER 2 EXTRAS ── */
 .usp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:32px}
 .usp-card{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow)}
@@ -480,6 +489,10 @@ footer ul li a:hover{color:#fff}
         <div class="paket-sub">Untuk usaha klinik kecantikan yang baru mulai tampil online</div>
         <div class="paket-divider"></div>
         <ul class="paket-list">
+          <li class="paket-highlight">🛡️ <strong>GARANSI MUTLAK:</strong> Skor Mobile 90–100 (Hijau). Tidak Hijau, Uang Kembali 100%!</li>
+          <li class="paket-highlight">⚡ <strong>Ultra Fast Code:</strong> Kodingan HTML &amp; CSS murni super ringan.</li>
+          <li class="paket-highlight">🚀 <strong>Siap Tayang &lt; 48 Jam:</strong> Pengerjaan kilat, speed is money.</li>
+          <li class="paket-highlight">☁️ <strong>Full Infrastructure:</strong> Deployment langsung ke Cloudflare Pages.</li>
           <li>Hero section dengan CTA WhatsApp</li>
           <li>Struktur sesuai standar Google</li>
           <li>Tombol WA floating</li>
@@ -506,6 +519,10 @@ footer ul li a:hover{color:#fff}
         <div class="paket-sub">Lengkap untuk usaha klinik kecantikan yang serius berkembang</div>
         <div class="paket-divider"></div>
         <ul class="paket-list">
+          <li class="paket-highlight">🛡️ <strong>GARANSI MUTLAK:</strong> Skor Mobile 90–100 (Hijau). Tidak Hijau, Uang Kembali 100%!</li>
+          <li class="paket-highlight">⚡ <strong>Ultra Fast Code:</strong> Kodingan HTML &amp; CSS murni super ringan.</li>
+          <li class="paket-highlight">🚀 <strong>Siap Tayang &lt; 48 Jam:</strong> Pengerjaan kilat, speed is money.</li>
+          <li class="paket-highlight">☁️ <strong>Full Infrastructure:</strong> Deployment langsung ke Cloudflare Pages.</li>
           <li>Hero section dengan CTA WhatsApp</li>
           <li>Struktur sesuai standar Google</li>
           <li>Tombol WA floating</li>
@@ -542,7 +559,15 @@ footer ul li a:hover{color:#fff}
       </div>
 
     </div>
-    <p style="text-align:center;font-size:13px;color:var(--lgray);margin-top:28px;">* Harga belum termasuk pembelian domain. Domain bisa dibeli terpisah mulai Rp 130.000/tahun.</p>
+    <div class="bonus-box">
+      <div class="bonus-header">🎁 BONUS EKSKLUSIF SEMUA PAKET</div>
+      <div class="bonus-body">
+        <strong>Bebas Biaya Perpanjangan Hosting &amp; SSL Selamanya</strong>
+        <span class="bonus-value">(Senilai Rp 1.500.000/tahun)</span>
+        <p>Website aktif selamanya tanpa biaya hosting tahunan!</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--lgray);margin-top:16px;">* Harga belum termasuk pembelian domain. Domain bisa dibeli terpisah mulai Rp 130.000/tahun.</p>
   </div>
 </section>
 
