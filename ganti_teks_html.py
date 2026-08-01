@@ -52,7 +52,7 @@ DAFTAR_PENGGANTIAN = [
     # Contoh penggantian teks biasa
     
     # Contoh penggantian angka / harga
-    ("6285743553879", "6285137396984"),
+    ("Azkha", "Radit"),
     
 
     # Contoh penggantian URL / link
